@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="ru" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nataliia Grishina | Fractional COO | CAIO | C-Level Sparring Partner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        board: {
+                            bg: '#080B12',
+                            card: '#0F1523',
+                            border: '#1E293B',
+                            accent: '#FF2200',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #080B12;
+            color: #F8FAFC;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(255, 34, 0, 0.07) 0px, transparent 45%),
+                radial-gradient(at 100% 0%, rgba(16, 185, 129, 0.05) 0px, transparent 45%);
+        }
+        html[lang="ru"] [data-lang="en"] { display: none !important; }
+        html[lang="en"] [data-lang="ru"] { display: none !important; }
+        .grid-bg {
+            background-size: 32px 32px;
+            background-image: 
+                linear-gradient(to right, rgba(30, 41, 59, 0.25) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(30, 41, 59, 0.25) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-[#FF2200] selection:text-white min-h-screen flex flex-col">
+
+    <!-- Top C-Level Status Bar (Matches Simulator v2.2 Header) -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-[#080B12]/90 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span class="inline-flex items-center gap-2 px-2.5 py-1 rounded-md text-xs font-mono font-semibold bg-[#FF2200]/10 text-[#FF2200] border border-[#FF2200]/30">
+                    <span class="w-2 h-2 rounded-full bg-[#FF2200] animate-pulse"></span>
+                    C-LEVEL EXECUTIVE HUB v2.2
+                </span>
+                <span data-lang="ru" class="hidden md:inline-block text-xs font-mono text-slate-400">
+                    C-Level Sparring Partner — не коуч
+                </span>
+                <span data-lang="en" class="hidden md:inline-block text-xs font-mono text-slate-400">
+                    C-Level Sparring Partner — not a coach
+                </span>
+            </div>
+
+            <nav class="hidden lg:flex items-center gap-6 text-sm text-slate-300 font-medium">
+                <a href="#assets" class="hover:text-white transition">
+                    <span data-lang="ru">Интерактивные активы</span>
+                    <span data-lang="en">Interactive Assets</span>
+                </a>
+                <a href="#services" class="hover:text-white transition">
+                    <span data-lang="ru">Услуги и продукты</span>
+                    <span data-lang="en">Commercial Services</span>
+                </a>
+                <a href="#track-record" class="hover:text-white transition">
+                    <span data-lang="ru">Опыт (18+ лет)</span>
+                    <span data-lang="en">Track Record (18+ yrs)</span>
+                </a>
+                <a href="#speaking" class="hover:text-white transition">
+                    <span data-lang="ru">Спикерство 2026</span>
+                    <span data-lang="en">Keynotes 2026</span>
+                </a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <button id="langToggle" type="button" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono font-bold bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 transition cursor-pointer" aria-label="Toggle Language">
+                    <span id="langBadgeRu" class="text-[#FF2200]">RU</span>
+                    <span class="text-slate-600">/</span>
+                    <span id="langBadgeEn" class="text-slate-400">EN</span>
+                </button>
+                <a href="https://t.me/NataliiaGrishina" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-[#FF2200] hover:bg-[#cc1b00] text-white transition shadow-lg shadow-[#FF2200]/20">
+                    <span data-lang="ru">Связаться в Telegram</span>
+                    <span data-lang="en">Direct Telegram</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-16">
+
+        <!-- HERO SECTION -->
+        <section class="relative rounded-2xl bg-[#0F1523] border border-slate-800 p-6 sm:p-10 lg:p-12 overflow-hidden grid-bg">
+            <div class="max-w-4xl space-y-6">
+                <div class="flex flex-wrap items-center gap-2">
+                    <span class="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-slate-800/90 text-slate-200 border border-slate-700">
+                        Fractional COO
+                    </span>
+                    <span class="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-slate-800/90 text-slate-200 border border-slate-700">
+                        Chief AI Officer (CAIO)
+                    </span>
+                    <span class="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-slate-800/90 text-slate-200 border border-slate-700">
+                        Digital Transformation Director
+                    </span>
+                    <span class="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-[#FF2200]/15 text-[#FF2200] border border-[#FF2200]/30">
+                        Global Operations &amp; P&amp;L Turnaround
+                    </span>
+                </div>
+
+                <div>
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                        <span data-lang="ru">Наталия Гришина</span>
+                        <span data-lang="en">Nataliia Grishina</span>
+                    </h1>
+                    <p class="mt-3 text-base sm:text-lg font-mono text-[#FF2200] font-semibold">
+                        Fractional COO | Chief AI Officer (CAIO) | Digital Transformation Director | Global Operations &amp; P&amp;L Turnaround
+                    </p>
+                </div>
+
+                <p data-lang="ru" class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl">
+                    <strong class="text-white">C-Level Sparring Partner — не коуч.</strong> Инженер и топ-менеджер с 18+ годами опыта (от QA в EPAM и масштабных госинтеграций в ГК «Техносерв» до ролей CBDO, COO и CFO). Перевожу технический долг, архитектурный хаос и сопротивление команд на язык чистой стоимости (Net Value), EBITDA и банковских ковенантов.
+                </p>
+                <p data-lang="en" class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl">
+                    <strong class="text-white">C-Level Sparring Partner — not a coach.</strong> Engineer and executive with 18+ years of track record (from QA Engineering at EPAM and large-scale enterprise integrations at Technoserv to CBDO, COO, and CFO roles). I translate technical debt, legacy architecture, and team friction directly into Net Value, EBITDA recovery, and debt covenant math.
+                </p>
+
+                <!-- Key Executive Metrics Strip -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+                    <div class="bg-[#080B12]/90 border border-slate-800 rounded-xl p-4">
+                        <div class="text-xs font-mono text-slate-400">
+                            <span data-lang="ru">ОПЫТ В IT И УПРАВЛЕНИИ</span>
+                            <span data-lang="en">EXECUTIVE TRACK RECORD</span>
+                        </div>
+                        <div class="text-2xl font-mono font-bold text-white mt-1">18+ <span data-lang="ru" class="text-sm font-normal text-slate-400">лет</span><span data-lang="en" class="text-sm font-normal text-slate-400">yrs</span></div>
+                        <div class="text-xs text-slate-400 mt-1">QA → CBDO / COO / CFO</div>
+                    </div>
+                    <div class="bg-[#080B12]/90 border border-slate-800 rounded-xl p-4">
+                        <div class="text-xs font-mono text-slate-400">
+                            <span data-lang="ru">РАЗБРОС СЦЕНАРИЕВ M&amp;A</span>
+                            <span data-lang="en">M&amp;A SCENARIO SPREAD</span>
+                        </div>
+                        <div class="text-2xl font-mono font-bold text-emerald-400 mt-1">5 047.0 <span data-lang="ru" class="text-sm font-normal text-slate-400">млн ₽</span><span data-lang="en" class="text-sm font-normal text-slate-400">M ₽</span></div>
+                        <div class="text-xs text-slate-400 mt-1">-4 074.9M vs +972.1M ₽</div>
+                    </div>
+                    <div class="bg-[#080B12]/90 border border-slate-800 rounded-xl p-4">
+                        <div class="text-xs font-mono text-slate-400">
+                            <span data-lang="ru">ЭКОНОМИЯ EBITDA (PMI)</span>
+                            <span data-lang="en">PMI EBITDA SAVED</span>
+                        </div>
+                        <div class="text-2xl font-mono font-bold text-sky-400 mt-1">+527.4 <span data-lang="ru" class="text-sm font-normal text-slate-400">млн ₽</span><span data-lang="en" class="text-sm font-normal text-slate-400">M ₽</span></div>
+                        <div class="text-xs text-slate-400 mt-1">
+                            <span data-lang="ru">Ускорение 0.12 → 0.25</span>
+                            <span data-lang="en">Speed 0.12 → 0.25</span>
+                        </div>
+                    </div>
+                    <div class="bg-[#080B12]/90 border border-slate-800 rounded-xl p-4">
+                        <div class="text-xs font-mono text-slate-400">
+                            <span data-lang="ru">ЗАПУСК EMPATHICBOT MVP</span>
+                            <span data-lang="en">EMPATHICBOT MVP BUILD</span>
+                        </div>
+                        <div class="text-2xl font-mono font-bold text-amber-400 mt-1">14 <span data-lang="ru" class="text-sm font-normal text-slate-400">дней</span><span data-lang="en" class="text-sm font-normal text-slate-400">days</span></div>
+                        <div class="text-xs text-slate-400 mt-1">LLM Tone Middleware</div>
+                    </div>
+                </div>
+
+                <!-- Hero CTA Buttons -->
+                <div class="flex flex-wrap gap-3 pt-2">
+                    <a href="https://t.me/NataliiaGrishina" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3.5 rounded-xl font-semibold text-sm bg-[#FF2200] hover:bg-[#cc1b00] text-white transition shadow-lg shadow-[#FF2200]/25">
+                        <span data-lang="ru">Забронировать C-Level спарринг (@NataliiaGrishina)</span>
+                        <span data-lang="en">Book a C-Level Sparring Session (@NataliiaGrishina)</span>
+                    </a>
+                    <a href="https://persefone2024.github.io/ma-simulator/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3.5 rounded-xl font-semibold text-sm bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 transition">
+                        <span data-lang="ru">Запустить M&amp;A Симулятор v2.2 →</span>
+                        <span data-lang="en">Launch M&amp;A Simulator v2.2 →</span>
+                    </a>
+                    <a href="https://t.me/ngrishina_digital" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-5 py-3.5 rounded-xl font-semibold text-sm bg-slate-900/90 hover:bg-slate-800 text-slate-300 border border-slate-800 transition">
+                        <span data-lang="ru">Канал «Злая операционка» (@ngrishina_digital)</span>
+                        <span data-lang="en">Telegram Channel (@ngrishina_digital)</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 1: INTERACTIVE DIGITAL ASSETS (SIMULATOR v2.2 & EMPATHIC.AI) -->
+        <section id="assets" class="space-y-6">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2 border-b border-slate-800 pb-4">
+                <div>
+                    <span class="text-xs font-mono uppercase tracking-wider text-[#FF2200]">
+                        <span data-lang="ru">// ЖИВЫЕ ПРОДУКТЫ И ФИНАНСОВО-ТЕХНИЧЕСКИЕ МОДЕЛИ</span>
+                        <span data-lang="en">// LIVE DIGITAL ASSETS &amp; DECISION SIMULATORS</span>
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white mt-1">
+                        <span data-lang="ru">Интерактивная C-Level лаборатория</span>
+                        <span data-lang="en">Interactive C-Level Product Lab</span>
+                    </h2>
+                </div>
+                <span class="text-xs font-mono text-slate-400">
+                    <span data-lang="ru">Никаких абстрактных слайдов — проверьте математику сами</span>
+                    <span data-lang="en">Zero slideware — test the live P&amp;L math yourself</span>
+                </span>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                <!-- Flagship Card 1: M&A Simulator v2.2 (7 cols) -->
+                <div class="lg:col-span-7 rounded-2xl bg-[#0F1523] border border-slate-800 p-6 sm:p-8 flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex flex-wrap items-center justify-between gap-2">
+                            <span class="px-2.5 py-1 rounded-md text-xs font-mono font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+                                RELEASE v2.2-PROD
+                            </span>
+                            <span class="text-xs font-mono text-slate-400">React + Recharts | Single-File LMS Ready</span>
+                        </div>
+
+                        <h3 class="text-xl sm:text-2xl font-bold text-white">
+                            <span data-lang="ru">Симулятор «Несварение M&amp;A» (M&amp;A Indigestion Simulator v2.2)</span>
+                            <span data-lang="en">M&amp;A Indigestion Simulator v2.2 (C-Level Decision Framework)</span>
+                        </h3>
+
+                        <p data-lang="ru" class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                            Интерактивный 36-месячный стресс-тест технологических поглощений. Сводит в единую формулу три конфликтующие оптики — <strong class="text-white">CFO (долг и ковенанты)</strong>, <strong class="text-white">CTO (ИТ-легаси и дублирующий ФОТ)</strong> и <strong class="text-white">CEO (бумажная синергия)</strong> — и считает вынужденную индексацию B2B-лицензий для клиентов вендора.
+                        </p>
+                        <p data-lang="en" class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                            Interactive 36-month post-merger integration (PMI) stress test. Unifies three conflicting C-suite lenses — <strong class="text-white">CFO (debt service &amp; cash drain)</strong>, <strong class="text-white">CTO (legacy penalty &amp; duplicate OPEX)</strong>, and <strong class="text-white">CEO (target synergy)</strong> — and computes the required B2B license price hike.
+                        </p>
+
+                        <!-- Verified Calibration Matrix from Simulator v2.2 -->
+                        <div class="overflow-x-auto rounded-xl border border-slate-800 bg-[#080B12]">
+                            <table class="w-full text-left border-collapse text-xs font-mono">
+                                <thead>
+                                    <tr class="border-b border-slate-800 text-slate-400 bg-slate-900/60">
+                                        <th class="p-3">
+                                            <span data-lang="ru">Пресет v2.2 (36 мес.)</span>
+                                            <span data-lang="en">Preset v2.2 (36m)</span>
+                                        </th>
+                                        <th class="p-3">
+                                            <span data-lang="ru">Синергия</span>
+                                            <span data-lang="en">Synergy</span>
+                                        </th>
+                                        <th class="p-3">
+                                            <span data-lang="ru">Потери PMI</span>
+                                            <span data-lang="en">PMI Drain</span>
+                                        </th>
+                                        <th class="p-3">
+                                            <span data-lang="ru">Проценты (25%)</span>
+                                            <span data-lang="en">Debt Interest</span>
+                                        </th>
+                                        <th class="p-3">
+                                            <span data-lang="ru">Чистый итог (Net)</span>
+                                            <span data-lang="en">Net Value</span>
+                                        </th>
+                                        <th class="p-3">
+                                            <span data-lang="ru">Рост лицензий</span>
+                                            <span data-lang="en">License Hike</span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-800/70">
+                                    <tr>
+                                        <td class="p-3 font-semibold text-white">
+                                            <span data-lang="ru">Базовый (3 млрд ₽)</span>
+                                            <span data-lang="en">Baseline (3B ₽)</span>
+                                        </td>
+                                        <td class="p-3 text-emerald-400">+1 225.0M</td>
+                                        <td class="p-3 text-amber-400">-967.4M</td>
+                                        <td class="p-3 text-rose-400">-1 350.0M</td>
+                                        <td class="p-3 font-bold text-rose-400">-1 092.4M ₽</td>
+                                        <td class="p-3 font-bold text-amber-400">+18.2%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 font-semibold text-white">
+                                            <span data-lang="ru">«Франкенштейн» (5 млрд ₽)</span>
+                                            <span data-lang="en">"Frankenstein" (5B ₽)</span>
+                                        </td>
+                                        <td class="p-3 text-emerald-400">+816.7M</td>
+                                        <td class="p-3 text-amber-400">-2 266.5M</td>
+                                        <td class="p-3 text-rose-400">-2 625.0M</td>
+                                        <td class="p-3 font-bold text-rose-500">-4 074.9M ₽</td>
+                                        <td class="p-3 font-bold text-rose-500">+67.9%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 font-semibold text-white">
+                                            <span data-lang="ru">«Жесткий PMI» (2 млрд ₽)</span>
+                                            <span data-lang="en">"Hard PMI" (2B ₽)</span>
+                                        </td>
+                                        <td class="p-3 text-emerald-400">+1 633.3M</td>
+                                        <td class="p-3 text-slate-300">-211.2M</td>
+                                        <td class="p-3 text-slate-300">-450.0M</td>
+                                        <td class="p-3 font-bold text-emerald-400">+972.1M ₽</td>
+                                        <td class="p-3 font-bold text-emerald-400">0.0%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap items-center gap-3 pt-2">
+                        <a href="https://persefone2024.github.io/ma-simulator/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-5 py-3 rounded-xl font-semibold text-sm bg-[#FF2200] hover:bg-[#cc1b00] text-white transition">
+                            <span data-lang="ru">Открыть интерактивный симулятор v2.2 →</span>
+                            <span data-lang="en">Open Interactive Simulator v2.2 →</span>
+                        </a>
+                        <a href="https://t.me/NataliiaGrishina" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-4 py-3 rounded-xl font-semibold text-xs font-mono bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 transition">
+                            <span data-lang="ru">Запросить LMS-коробку / Игру для EMBA</span>
+                            <span data-lang="en">Request LMS Box / EMBA War-Game</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Flagship Card 2: Empathic.ai & Empathicbot (5 cols) -->
+                <div class="lg:col-span-5 rounded-2xl bg-[#0F1523] border border-slate-800 p-6 sm:p-8 flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between gap-2">
+                            <span class="px-2.5 py-1 rounded-md text-xs font-mono font-semibold bg-sky-500/10 text-sky-400 border border-sky-500/30">
+                                FOUNDER, CPO &amp; AI ARCHITECT
+                            </span>
+                            <span class="text-xs font-mono text-slate-400">MVP in 14 Days</span>
+                        </div>
+
+                        <h3 class="text-xl sm:text-2xl font-bold text-white">
+                            Empathic.ai &amp; Empathicbot
+                        </h3>
+
+                        <p data-lang="ru" class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                            Поведенческая LLM-middleware система анализа коммуникационного тона и снижения токсичности в рабочих контурах. Функциональный MVP системы <strong class="text-white">Empathicbot</strong> спроектирован и собран за <strong class="text-white">14 дней</strong>.
+                        </p>
+                        <p data-lang="en" class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                            Behavior-aware LLM communication middleware designed to analyze organizational tone and reduce workplace toxicity. Built the functional MVP of <strong class="text-white">Empathicbot</strong> within <strong class="text-white">14 days</strong>.
+                        </p>
+
+                        <div class="space-y-2.5 bg-[#080B12] border border-slate-800 rounded-xl p-4 text-xs sm:text-sm text-slate-300">
+                            <div class="flex items-start gap-2.5">
+                                <span class="text-[#FF2200] font-mono font-bold">01</span>
+                                <div>
+                                    <span data-lang="ru"><strong class="text-white">Датчик трения при M&amp;A:</strong> диагностика тихого саботажа и выгорания инженеров, удерживающая скорость PMI на уровне 0.25 вместо 0.08.</span>
+                                    <span data-lang="en"><strong class="text-white">M&amp;A Friction Sensor:</strong> detects silent sabotage and key engineer burnout early, keeping PMI speed at 0.25 instead of 0.08.</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-2.5">
+                                <span class="text-[#FF2200] font-mono font-bold">02</span>
+                                <div>
+                                    <span data-lang="ru"><strong class="text-white">Мульти-LLM пайплайн:</strong> гибридная архитектура верификации логики, тональности и поведенческих паттернов.</span>
+                                    <span data-lang="en"><strong class="text-white">Multi-LLM Pipeline:</strong> hybrid middleware architecture for tone auditing, behavioral pattern detection, and safe routing.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap items-center gap-3 pt-2">
+                        <a href="https://github.com/persefone2024" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-5 py-3 rounded-xl font-semibold text-sm bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 transition">
+                            <span data-lang="ru">GitHub профиль (@persefone2024) →</span>
+                            <span data-lang="en">GitHub Profile (@persefone2024) →</span>
+                        </a>
+                        <a href="https://t.me/NataliiaGrishina" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-4 py-3 rounded-xl font-semibold text-xs font-mono bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 transition">
+                            <span data-lang="ru">Обсудить Enterprise-пилот</span>
+                            <span data-lang="en">Request Enterprise Pilot</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: COMMERCIAL SERVICES & B2B PRODUCTS -->
+        <section id="services" class="space-y-6">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2 border-b border-slate-800 pb-4">
+                <div>
+                    <span class="text-xs font-mono uppercase tracking-wider text-[#FF2200]">
+                        <span data-lang="ru">// КОММЕРЧЕСКАЯ МАТРИЦА И КОНСАЛТИНГОВЫЕ ПРОДУКТЫ</span>
+                        <span data-lang="en">// COMMERCIAL SERVICES &amp; EXECUTIVE EDUCATION PRODUCTS</span>
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white mt-1">
+                        <span data-lang="ru">Форматы работы и стоимость</span>
+                        <span data-lang="en">Engagement Models &amp; Pricing</span>
+                    </h2>
+                </div>
+                <span class="text-xs font-mono text-slate-400">
+                    <span data-lang="ru">Окупаемость считается до старта работ</span>
+                    <span data-lang="en">ROI-backed engagements with clear deliverables</span>
+                </span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service 1: Pre-Deal M&A Stress-Test -->
+                <div class="rounded-2xl bg-[#0F1523] border border-slate-800 p-6 flex flex-col justify-between space-y-4 hover:border-slate-600 transition">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-mono px-2.5 py-1 rounded bg-rose-500/10 text-rose-400 border border-rose-500/20">PE / VC / M&amp;A BUYERS</span>
+                            <span class="text-sm font-mono font-bold text-white">600 000 ₽</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">
+                            <span data-lang="ru">Pre-Deal «Red Team» стресс-тест M&amp;A</span>
+                            <span data-lang="en">Pre-Deal "Red Team" M&amp;A Stress-Test</span>
+                        </h3>
+                        <p data-lang="ru" class="text-sm text-slate-300 leading-relaxed">
+                            Независимый 5-дневный аудит покупаемого ИТ-актива до подписания сделки. Оцифровка стоимости легаси, дублирующего ФОТ и глубины маржинальной ямы (J-Curve) для обоснования дисконта к цене покупки.
+                        </p>
+                        <p data-lang="en" class="text-sm text-slate-300 leading-relaxed">
+                            Independent 5-day operational &amp; tech audit prior to term sheet signing. Quantifies legacy drag, duplicate payroll, and J-Curve depth to justify valuation discounts.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-slate-800/80 text-xs font-mono text-slate-400">
+                        <span data-lang="ru">Эффект: сохранение до 527.4 млн ₽ EBITDA на сделке в 3 млрд ₽</span>
+                        <span data-lang="en">Impact: saves up to 527.4M ₽ EBITDA on a 3B ₽ transaction</span>
+                    </div>
+                </div>
+
+                <!-- Service 2: Executive Education & LMS Box -->
+                <div class="rounded-2xl bg-[#0F1523] border border-slate-800 p-6 flex flex-col justify-between space-y-4 hover:border-slate-600 transition">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-mono px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">EMBA / CORP UNIVERSITIES</span>
+                            <span class="text-sm font-mono font-bold text-white">300k / 450k ₽</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">
+                            <span data-lang="ru">Деловая игра Boardroom War-Game и LMS-коробки</span>
+                            <span data-lang="en">Boardroom War-Games &amp; Boxed LMS Licenses</span>
+                        </h3>
+                        <p data-lang="ru" class="text-sm text-slate-300 leading-relaxed">
+                            Проведение 4-часового практикума для групп EMBA и кадрового резерва по ролям CEO/CFO/CTO (300 000 ₽) или отчуждаемая LMS-коробка тренажера с 3 расчетными кейсами и ключами ответов (450 000 ₽; полная платформа с БД — 1.2 млн ₽).
+                        </p>
+                        <p data-lang="en" class="text-sm text-slate-300 leading-relaxed">
+                            Facilitated 4-hour CEO/CFO/CTO Boardroom War-Game (300,000 ₽) or standalone single-file HTML5 LMS simulator package with 3 graded case studies (450,000 ₽; full DB platform — 1.2M ₽).
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-slate-800/80 text-xs font-mono text-slate-400">
+                        <span data-lang="ru">Импортозамещение симуляций HBP/INSEAD под ставку 25%</span>
+                        <span data-lang="en">Replaces HBP/INSEAD simulations with 25% rate reality</span>
+                    </div>
+                </div>
+
+                <!-- Service 3: B2B License Hike Defense for CIO/CFO -->
+                <div class="rounded-2xl bg-[#0F1523] border border-slate-800 p-6 flex flex-col justify-between space-y-4 hover:border-slate-600 transition">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-mono px-2.5 py-1 rounded bg-sky-500/10 text-sky-400 border border-sky-500/20">ENTERPRISE CIO / PROCUREMENT</span>
+                            <span class="text-sm font-mono font-bold text-white">15% Success Fee</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">
+                            <span data-lang="ru">Защита ИТ-бюджета от наценки вендоров</span>
+                            <span data-lang="en">B2B Software License Hike Defense</span>
+                        </h3>
+                        <p data-lang="ru" class="text-sm text-slate-300 leading-relaxed">
+                            Финансово-технический контр-расчет для крупных заказчиков, которым вендор после своего M&amp;A индексирует лицензии на +18.2%..+67.9%. Сбиваем необоснованную наценку на переговорах за процент от сэкономленного бюджета.
+                        </p>
+                        <p data-lang="en" class="text-sm text-slate-300 leading-relaxed">
+                            Analytical counter-valuation when software vendors pass their M&amp;A losses (+18.2% to +67.9% hikes) onto enterprise clients. Billed as a 15% success fee on saved 3-year contract spend.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-slate-800/80 text-xs font-mono text-slate-400">
+                        <span data-lang="ru">Кейс: экономия 26.4 млн ₽ на 3-летнем контракте (с 18.2% до 9.4%)</span>
+                        <span data-lang="en">Benchmark: 26.4M ₽ saved on 300M ₽ 3-year license pool</span>
+                    </div>
+                </div>
+
+                <!-- Service 4: Custom B2B ROI Calculator Development -->
+                <div class="rounded-2xl bg-[#0F1523] border border-slate-800 p-6 flex flex-col justify-between space-y-4 hover:border-slate-600 transition">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-mono px-2.5 py-1 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20">B2B TECH VENDORS / CBDO</span>
+                            <span class="text-sm font-mono font-bold text-white">650 000 ₽</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">
+                            <span data-lang="ru">Разработка кастомных C-Level ROI-симуляторов</span>
+                            <span data-lang="en">Custom B2B Value-Selling ROI Simulators</span>
+                        </h3>
+                        <p data-lang="ru" class="text-sm text-slate-300 leading-relaxed">
+                            Проектирование финансовой методологии и сборка интерактивного P&amp;L-калькулятора под ключ (по архитектуре v2.2) для отделов Enterprise-продаж, чтобы защищать сложные чеки перед CFO заказчика.
+                        </p>
+                        <p data-lang="en" class="text-sm text-slate-300 leading-relaxed">
+                            Turnkey financial modeling and single-file React simulator build for enterprise sales teams to prove hard P&amp;L payback directly in front of the buyer's CFO.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-slate-800/80 text-xs font-mono text-slate-400">
+                        <span data-lang="ru">Готовность боевого дистрибутива за 5–7 рабочих дней</span>
+                        <span data-lang="en">Delivered as an autonomous production bundle in 5–7 days</span>
+                    </div>
+                </div>
+
+                <!-- Service 5: Fractional COO & Hard PMI Execution -->
+                <div class="rounded-2xl bg-[#0F1523] border border-slate-800 p-6 flex flex-col justify-between space-y-4 hover:border-slate-600 transition">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-mono px-2.5 py-1 rounded bg-purple-500/10 text-purple-400 border border-purple-500/20">SHAREHOLDERS / BOARDS</span>
+                            <span class="text-sm font-mono font-bold text-white">450 000 ₽/мес + KPI</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">
+                            <span data-lang="ru">Fractional COO: жесткий PMI и разворот P&amp;L</span>
+                            <span data-lang="en">Fractional COO: Hard PMI &amp; P&amp;L Turnaround</span>
+                        </h3>
+                        <p data-lang="ru" class="text-sm text-slate-300 leading-relaxed">
+                            Внешнее антикризисное управление застрявшим слиянием или буксующей операционкой на 6 месяцев. Ликвидация дублирующих контуров, ускорение PMI с 0.12 до 0.25 и возврат маржинальности EBITDA к базовым 15%.
+                        </p>
+                        <p data-lang="en" class="text-sm text-slate-300 leading-relaxed">
+                            6-month interim executive mandate to rescue stalled integrations. Consolidates duplicate systems, accelerates PMI from 0.12 to 0.25, and restores baseline EBITDA margins.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-slate-800/80 text-xs font-mono text-slate-400">
+                        <span data-lang="ru">Формат: ретейнер 2.70 млн ₽ (6 мес.) + % от сохраненной EBITDA</span>
+                        <span data-lang="en">Structure: 6-month retainer + % of preserved EBITDA</span>
+                    </div>
+                </div>
+
+                <!-- Service 6: Fractional CAIO & AI Portfolio Governance -->
+                <div class="rounded-2xl bg-[#0F1523] border border-slate-800 p-6 flex flex-col justify-between space-y-4 hover:border-slate-600 transition">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-mono px-2.5 py-1 rounded bg-[#FF2200]/15 text-[#FF2200] border border-[#FF2200]/30">FRACTIONAL CAIO</span>
+                            <span class="text-sm font-mono font-bold text-white">AI Governance</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">
+                            <span data-lang="ru">Финансовая валидация ИИ-агентов (CAIO)</span>
+                            <span data-lang="en">Enterprise AI Portfolio Financial Validation</span>
+                        </h3>
+                        <p data-lang="ru" class="text-sm text-slate-300 leading-relaxed">
+                            Аудит экономики корпоративных ИИ-инициатив. Закрытие убыточных «витринных» пилотов, расчет реальной стоимости инференса и пересборка операционных процессов под измеримый P&amp;L-эффект.
+                        </p>
+                        <p data-lang="en" class="text-sm text-slate-300 leading-relaxed">
+                            P&amp;L audit of enterprise AI initiatives. Kills vanity AI pilots, models full inference &amp; integration TCO, and redesigns operational workflows around measurable ROI.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-slate-800/80 text-xs font-mono text-slate-400">
+                        <span data-lang="ru">Методика представлена на CCWeek 2026 и TAdviser Summit 2026</span>
+                        <span data-lang="en">Framework featured at CCWeek 2026 &amp; TAdviser Summit 2026</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: TRACK RECORD & ENGINEERING FOUNDATION -->
+        <section id="track-record" class="space-y-6">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2 border-b border-slate-800 pb-4">
+                <div>
+                    <span class="text-xs font-mono uppercase tracking-wider text-[#FF2200]">
+                        <span data-lang="ru">// ИНЖЕНЕРНЫЙ ФУНДАМЕНТ И УПРАВЛЕНЧЕСКИЙ БЭКГРАУНД</span>
+                        <span data-lang="en">// ENGINEERING FOUNDATION &amp; EXECUTIVE TRACK RECORD</span>
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white mt-1">
+                        <span data-lang="ru">18+ лет: от кода и QA до управления P&amp;L холдингов</span>
+                        <span data-lang="en">18+ Years: From QA Engineering to Full P&amp;L Ownership</span>
+                    </h2>
+                </div>
+                <span class="text-xs font-mono text-slate-400">
+                    Enterprise IT • Telecom • Finance • GovTech • Media • Manufacturing
+                </span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="rounded-2xl bg-[#0F1523] border border-slate-800 p-6 space-y-3">
+                    <div class="text-xs font-mono text-[#FF2200] font-bold">STAGE 01 // C-LEVEL &amp; AI ARCHITECTURE</div>
+                    <h3 class="text-lg font-bold text-white">
+                        <span data-lang="ru">CBDO, COO, CFO и основатель Empathic.ai</span>
+                        <span data-lang="en">CBDO, COO, CFO &amp; Founder at Empathic.ai</span>
+                    </h3>
+                    <p data-lang="ru" class="text-sm text-slate-300 leading-relaxed">
+                        Прямое управление коммерческой воронкой, операционной рентабельностью и финансовыми ковенантами. С 2025–2026 гг. — независимая C-Level практика (Fractional COO / CAIO) и разработка поведенческих LLM-систем в Empathic.ai.
+                    </p>
+                    <p data-lang="en" class="text-sm text-slate-300 leading-relaxed">
+                        Direct ownership of commercial pipelines, operational EBITDA, and corporate finance as CBDO, COO, and CFO. Leading an independent C-Level advisory practice and building behavior-aware LLM middleware at Empathic.ai.
+                    </p>
+                </div>
+
+                <div class="rounded-2xl bg-[#0F1523] border border-slate-800 p-6 space-y-3">
+                    <div class="text-xs font-mono text-sky-400 font-bold">STAGE 02 // ENTERPRISE INTEGRATION</div>
+                    <h3 class="text-lg font-bold text-white">
+                        <span data-lang="ru">Масштабные интеграции в ГК «Техносерв»</span>
+                        <span data-lang="en">Large-Scale Integration at Technoserv</span>
+                    </h3>
+                    <p data-lang="ru" class="text-sm text-slate-300 leading-relaxed">
+                        Управление крупными корпоративными и государственными интеграционными программами в ГК «Техносерв» (до сделки со структурами ВТБ). Практический опыт сшивания сложных ИТ-ландшафтов, ведомственных контуров и распределенных команд.
+                    </p>
+                    <p data-lang="en" class="text-sm text-slate-300 leading-relaxed">
+                        Managed large-scale enterprise and public-sector integration initiatives at Technoserv (prior to its acquisition by VTB). Deep hands-on experience unifying complex legacy IT landscapes and multi-vendor teams.
+                    </p>
+                </div>
+
+                <div class="rounded-2xl bg-[#0F1523] border border-slate-800 p-6 space-y-3">
+                    <div class="text-xs font-mono text-emerald-400 font-bold">STAGE 03 // ENGINEERING ROOTS</div>
+                    <h3 class="text-lg font-bold text-white">
+                        <span data-lang="ru">EPAM и Школа программирования РГРТУ</span>
+                        <span data-lang="en">EPAM QA Roots &amp; Computer Programming Degree</span>
+                    </h3>
+                    <p data-lang="ru" class="text-sm text-slate-300 leading-relaxed">
+                        Старт карьеры с инженера по качеству ПО (QA) в EPAM и профильное высшее образование (Школа программирования, Рязанский государственный радиотехнический университет). Иммунитет к «бумажным» отчетам и умение верифицировать архитектуру лично.
+                    </p>
+                    <p data-lang="en" class="text-sm text-slate-300 leading-relaxed">
+                        Started as a QA Engineer at EPAM backed by an executive technical university degree from the School of Computer Programming at Ryazan State Radio Engineering University (RSREU). Built-in immunity to technical bluffing.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: PUBLIC EXPERTISE & KEYNOTE SPEAKING (2026) -->
+        <section id="speaking" class="space-y-6">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2 border-b border-slate-800 pb-4">
+                <div>
+                    <span class="text-xs font-mono uppercase tracking-wider text-[#FF2200]">
+                        <span data-lang="ru">// ПУБЛИЧНАЯ ЭКСПЕРТИЗА И ОТРАСЛЕВЫЕ САММИТЫ</span>
+                        <span data-lang="en">// PUBLIC EXPERTISE &amp; INDUSTRY KEYNOTES</span>
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white mt-1">
+                        <span data-lang="ru">Выступления и аналитика 2026</span>
+                        <span data-lang="en">2026 Keynote Sessions &amp; Media</span>
+                    </h2>
+                </div>
+                <a href="https://t.me/ngrishina_digital" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-[#FF2200] hover:underline">
+                    <span data-lang="ru">Читать разборы в @ngrishina_digital →</span>
+                    <span data-lang="en">Read analysis in @ngrishina_digital →</span>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- CCWeek 2026 -->
+                <div class="rounded-2xl bg-[#0F1523] border border-slate-800 p-6 flex flex-col justify-between space-y-4">
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-between text-xs font-mono">
+                            <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">CCWeek 2026</span>
+                            <span class="text-slate-400">
+                                <span data-lang="ru">Октябрь 2026</span>
+                                <span data-lang="en">October 2026</span>
+                            </span>
+                        </div>
+                        <h3 class="text-base font-bold text-white pt-1">
+                            <span data-lang="ru">Экономика ИИ-агентов и операционная адаптация процессов</span>
+                            <span data-lang="en">AI Agent Economics &amp; Operational Process Adaptation</span>
+                        </h3>
+                        <p data-lang="ru" class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                            30-минутный спикерский доклад: почему внедрение ИИ-агентов без пересборки регламентов и учета стоимости инференса уводит операционную маржу в минус.
+                        </p>
+                        <p data-lang="en" class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                            30-minute speaker presentation analyzing why deploying AI agents without workflow redesign and inference cost controls erodes operational margins.
+                        </p>
+                    </div>
+                    <div class="text-xs font-mono text-slate-400 pt-2 border-t border-slate-800/80">
+                        <span data-lang="ru">Статус: Проведено (30 мин, основной трек)</span>
+                        <span data-lang="en">Status: Delivered (30-min Keynote Session)</span>
+                    </div>
+                </div>
+
+                <!-- TAdviser IT Summit 2026 -->
+                <div class="rounded-2xl bg-[#0F1523] border border-slate-800 p-6 flex flex-col justify-between space-y-4">
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-between text-xs font-mono">
+                            <span class="px-2 py-0.5 rounded bg-[#FF2200]/15 text-[#FF2200] border border-[#FF2200]/30">TAdviser IT Summit 2026</span>
+                            <span class="text-slate-400">
+                                <span data-lang="ru">Ноябрь 2026</span>
+                                <span data-lang="en">November 2026</span>
+                            </span>
+                        </div>
+                        <h3 class="text-base font-bold text-white pt-1">
+                            <span data-lang="ru">Финансовая валидация энтерпрайз ИИ-агентов</span>
+                            <span data-lang="en">Financial Validation of Enterprise AI Agents</span>
+                        </h3>
+                        <p data-lang="ru" class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                            Методология жесткого P&amp;L-отсева ИИ-инициатив для советов директоров, CEO и CFO: как отделить бумажную экономию ФОТ от реального денежного потока.
+                        </p>
+                        <p data-lang="en" class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                            Hard P&amp;L validation framework for Boards, CEOs, and CFOs: separating slideware payroll savings from actual net cash flow impact.
+                        </p>
+                    </div>
+                    <div class="text-xs font-mono text-slate-400 pt-2 border-t border-slate-800/80">
+                        <span data-lang="ru">Фокус: AI Portfolio Governance &amp; CFO OpEx</span>
+                        <span data-lang="en">Focus: AI Portfolio Governance &amp; CFO OpEx</span>
+                    </div>
+                </div>
+
+                <!-- CNews FORUM 2026 -->
+                <div class="rounded-2xl bg-[#0F1523] border border-slate-800 p-6 flex flex-col justify-between space-y-4">
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-between text-xs font-mono">
+                            <span class="px-2 py-0.5 rounded bg-sky-500/10 text-sky-400 border border-sky-500/20">CNews FORUM 2026</span>
+                            <span class="text-slate-400">
+                                <span data-lang="ru">Июль 2026, Москва</span>
+                                <span data-lang="en">July 2026, Moscow</span>
+                            </span>
+                        </div>
+                        <h3 class="text-base font-bold text-white pt-1">
+                            <span data-lang="ru">Развертывание ИИ-агентов и операционная трансформация</span>
+                            <span data-lang="en">AI Agent Deployment &amp; Operational Transformation</span>
+                        </h3>
+                        <p data-lang="ru" class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                            Практика встраивания автономных и полуавтономных агентов в существующий корпоративный ландшафт без разрушения SLA и потери управляемости.
+                        </p>
+                        <p data-lang="en" class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                            Integrating autonomous and human-in-the-loop AI agents into legacy enterprise architecture without breaking core SLAs.
+                        </p>
+                    </div>
+                    <div class="text-xs font-mono text-slate-400 pt-2 border-t border-slate-800/80">
+                        <span data-lang="ru">Фокус: Enterprise AI &amp; Change Management</span>
+                        <span data-lang="en">Focus: Enterprise AI &amp; Change Management</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: DIRECT C-LEVEL CONTACT -->
+        <section class="rounded-2xl bg-gradient-to-r from-[#0F1523] via-[#131B2E] to-[#0F1523] border border-slate-800 p-6 sm:p-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+            <div class="space-y-2 max-w-2xl">
+                <div class="text-xs font-mono text-[#FF2200] font-semibold uppercase tracking-wider">
+                    <span data-lang="ru">// ПРЯМОЙ КОНТАКТ БЕЗ СЕКРЕТАРЕЙ И ПОСРЕДНИКОВ</span>
+                    <span data-lang="en">// DIRECT EXECUTIVE ACCESS — ZERO GATEKEEPERS</span>
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-bold text-white">
+                    <span data-lang="ru">Готовите сделку M&amp;A, защищаете ИТ-бюджет или ищете практикум для EMBA?</span>
+                    <span data-lang="en">Planning an M&amp;A Deal, Defending IT Spend, or Booking an EMBA War-Game?</span>
+                </h2>
+                <p data-lang="ru" class="text-sm sm:text-base text-slate-300">
+                    Напишите напрямую в Telegram для бронирования 90-минутной диагностической сессии, заказа коробочной LMS-лицензии симулятора v2.2 или приглашения спикером.
+                </p>
+                <p data-lang="en" class="text-sm sm:text-base text-slate-300">
+                    Reach out directly on Telegram or via email to book a 90-minute diagnostic sparring session, license the M&amp;A Simulator v2.2 for your LMS, or invite Nataliia as a keynote speaker.
+                </p>
+            </div>
+
+            <div class="flex flex-wrap gap-3 w-full lg:w-auto">
+                <a href="https://t.me/NataliiaGrishina" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl font-semibold text-sm bg-[#FF2200] hover:bg-[#cc1b00] text-white transition shadow-lg shadow-[#FF2200]/25">
+                    <span data-lang="ru">Написать @NataliiaGrishina</span>
+                    <span data-lang="en">Message @NataliiaGrishina</span>
+                </a>
+                <a href="mailto:nataliya.grishina@yahoo.com" class="w-full sm:w-auto inline-flex items-center justify-center px-5 py-3.5 rounded-xl font-mono text-xs font-semibold bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 transition">
+                    nataliya.grishina@yahoo.com
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-slate-800/80 py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400 font-mono">
+            <div>
+                © 2026 Nataliia Grishina (Наталия Гришина). All rights reserved.
+            </div>
+            <div class="flex flex-wrap items-center gap-4">
+                <a href="https://t.me/NataliiaGrishina" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">@NataliiaGrishina</a>
+                <span>•</span>
+                <a href="https://t.me/ngrishina_digital" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">@ngrishina_digital</a>
+                <span>•</span>
+                <a href="https://persefone2024.github.io/ma-simulator/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">M&amp;A Simulator v2.2</a>
+                <span>•</span>
+                <a href="https://github.com/persefone2024" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            const btn = document.getElementById('langToggle');
+            const badgeRu = document.getElementById('langBadgeRu');
+            const badgeEn = document.getElementById('langBadgeEn');
+
+            function setLanguage(lang) {
+                document.documentElement.lang = lang;
+                if (lang === 'ru') {
+                    badgeRu.className = 'text-[#FF2200]';
+                    badgeEn.className = 'text-slate-400';
+                } else {
+                    badgeRu.className = 'text-slate-400';
+                    badgeEn.className = 'text-[#FF2200]';
+                }
+            }
+
+            btn.addEventListener('click', function() {
+                const nextLang = document.documentElement.lang === 'ru' ? 'en' : 'ru';
+                setLanguage(nextLang);
+            });
+        })();
+    </script>
+</body>
+</html>
